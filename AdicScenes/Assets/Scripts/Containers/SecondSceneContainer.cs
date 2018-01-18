@@ -2,7 +2,6 @@
 using Adic.Container;
 using Assets.Scripts.Interfaces.SecondScene;
 using Assets.Scripts.Services.SecondScene;
-using UnityEngine;
 
 public class SecondSceneContainer : ContextRoot
 {
@@ -12,6 +11,8 @@ public class SecondSceneContainer : ContextRoot
 
         // this container should not persist (should be disposed) when changing scene
         container
+            // this should throw exception as it has been declared in the main container
+            //.Bind<IFirstSceneNetworkService>().ToSingleton<FirstSceneNetworkService>()
             .Bind<ISecondSceneDamageService>().ToSingleton<SecondSceneDamageService>();
 
         this.AddContainer(container);
