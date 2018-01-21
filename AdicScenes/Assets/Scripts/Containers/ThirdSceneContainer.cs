@@ -8,7 +8,9 @@ public class ThirdSceneContainer : ContextRoot
 {
     public override void SetupContainers()
     {
-        IInjectionContainer container = new InjectionContainer().RegisterExtension<UnityBindingContainerExtension>();
+        IInjectionContainer container = new InjectionContainer()
+            .RegisterExtension<UnityBindingContainerExtension>()
+            .RegisterExtension<SharedContainerExtension>();
 
         // this container should not persist (should be disposed) when changing scene
         container
