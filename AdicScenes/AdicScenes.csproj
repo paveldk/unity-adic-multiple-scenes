@@ -360,6 +360,7 @@
     <Compile Include="Assets\Adic\Scripts\Framework\Util\TypeUtils.cs" />
     <Compile Include="Assets\Scripts\Containers\FirstSceneContainer.cs" />
     <Compile Include="Assets\Scripts\Containers\SecondSceneContainer.cs" />
+    <Compile Include="Assets\Scripts\Containers\SharedContainerExtension.cs" />
     <Compile Include="Assets\Scripts\Containers\ThirdSceneContainer.cs" />
     <Compile Include="Assets\Scripts\Interfaces\FirstScene\IFirstSceneNetworkService.cs" />
     <Compile Include="Assets\Scripts\Interfaces\FirstScene\IFirstScenePlayerService.cs" />
